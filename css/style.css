@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b192c; /* Azul marinho profundo e elegante */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e2e8f0; /* Azul gelo bem claro para excelente leitura */
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 30px 0;
+    border-bottom: 1px solid rgba(144, 202, 249, 0.15);
+}
+
+#logo-menu {
+    width: 110px;
+    margin-left: 20px;
+    filter: brightness(0) invert(1); /* Deixa a logo em branco para combinar perfeitamente */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 20px;
+}
+
+nav p {
+    color: #90caf9; /* Azul claro vibrante */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav p:hover {
+    color: #ffffff; /* Branco puro no hover */
+    cursor: pointer;
+}
+
+nav span {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#texto {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+#texto h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+#texto h1 strong {
+    color: #38bdf8; /* Azul céu brilhante para o destaque */
+}
+
+#texto h1::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #38bdf8;
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+
+#texto p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #cbd5e1; /* Cinza azulado suave */
+}
+
+#funcionalidades {
+    margin-top: 20px;
+}
+
+#funcionalidades h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#funcionalidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none; /* Removido o marcador padrão feio para dar lugar a um estilo card moderno */
+    gap: 15px;
+}
+
+#funcionalidades li {
+    width: 32.5%;
+    font-weight: 600;
+    padding: 18px;
+    background-color: rgba(30, 41, 59, 0.7); /* Efeito vidro com azul escuro translúcido */
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    border: 1px solid rgba(56, 189, 248, 0.2); /* Borda azul sutil */
+    color: #f1f5f9;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+#funcionalidades li:hover {
+    transform: translateY(-3px);
+    border-color: #38bdf8;
+}
+
+hr {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border: 0;
+    height: 1px;
+    background: rgba(144, 202, 249, 0.2);
+}
+
+#servicos {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+#servicos-destaque h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 15px; /* Cria espaçamento elegante entre as células estilo cards */
+}
+
